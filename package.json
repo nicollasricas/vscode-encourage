@@ -1,0 +1,84 @@
+{
+  "name": "vscode-encourage",
+  "displayName": "Encourage",
+  "description": "An extension that adds a little encouragement through your day or not, every time you save a document.",
+  "version": "1.0.0",
+  "icon": "images/icon.png",
+  "preview": true,
+  "publisher": "nicollasr",
+  "bugs": {
+    "url": "https://github.com/nicollasricas/vscode-encourage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicollasricas/vscode-encourage.git"
+  },
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "configuration": [
+      {
+        "title": "Encourage",
+        "properties": {
+          "encourage.encouragements": {
+            "type": "array",
+            "description": "A list of encouragements that will replace the default.",
+            "default": []
+          },
+          "encourage.additionalEncouragements": {
+            "type": "array",
+            "description": "A list with additional encouragments.",
+            "default": []
+          },
+          "encourage.discouragements": {
+            "type": "array",
+            "description": "A list of discouragements that will replace the default.",
+            "default": []
+          },
+          "encourage.additionalDiscouragements": {
+            "type": "array",
+            "description": "A list with additional discouragements.",
+            "default": []
+          },
+          "encourage.random": {
+            "type": "boolean",
+            "description": "Where it should display a random encouragement/discouragement or not.",
+            "default": "true"
+          }
+        }
+      }
+    ]
+  },
+  "keywords": [
+    "encourage",
+    "encouragement",
+    "discouragement",
+    "fun"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.41.0",
+    "glob": "^7.1.4",
+    "mocha": "^6.1.4",
+    "typescript": "^3.3.1",
+    "tslint": "^5.12.1",
+    "vscode-test": "^1.2.0"
+  }
+}
