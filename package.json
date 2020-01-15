@@ -47,7 +47,7 @@
           "encourage.random": {
             "type": "boolean",
             "description": "Where it should display a random encouragement/discouragement or not.",
-            "default": "true"
+            "default": true
           }
         }
       }
