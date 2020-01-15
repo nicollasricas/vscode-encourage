@@ -46,7 +46,7 @@ function loadConfiguration() {
     encouragements = defaultEncouragements;
   }
 
-  encouragements.concat(
+  encouragements = encouragements.concat(
     configuration.get<string[]>("additionalEncouragements", [])
   );
 
@@ -56,7 +56,7 @@ function loadConfiguration() {
     discouragements = defaultDiscouragements;
   }
 
-  discouragements.concat(
+  discouragements = discouragements.concat(
     configuration.get<string[]>("additionalDiscouragements", [])
   );
 
