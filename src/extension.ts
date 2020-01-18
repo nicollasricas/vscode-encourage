@@ -3,9 +3,10 @@ import { defaultEncouragements, defaultDiscouragements } from "./defaults";
 
 const decorationType = vscode.window.createTextEditorDecorationType({
   after: {
-    margin: "0 0 0 0",
+    margin: "0 0 0 3em",
     textDecoration: "none;"
   },
+  isWholeLine: true,
   rangeBehavior: vscode.DecorationRangeBehavior.ClosedOpen
 });
 
@@ -14,6 +15,7 @@ let discouragements: string[] = [];
 let seenEncouragements: string[] = [];
 let seenDiscouragements: string[] = [];
 let random: boolean = true;
+//let followCursor: boolean = true;
 
 export function activate(context: vscode.ExtensionContext) {
   loadConfiguration();
@@ -105,19 +107,30 @@ function showEncouragement() {
 function setDecoration(text: string) {
   const editor = vscode.window.activeTextEditor!;
 
+  let decorationPosition: vscode.Range;
+
+  //if (followCursor) {
+  decorationPosition = new vscode.Range(
+    editor.selection.start,
+    editor.selection.end
+  );
+  // } else {
+  // decorationPosition = new vscode.Range(
+  //   editor.visibleRanges[0].start.line + 1,
+  //   Number.MAX_SAFE_INTEGER,
+  //   0,
+  //   Number.MAX_SAFE_INTEGER
+  // );
+  //}
+
   const decorationOptions: vscode.DecorationOptions = {
-    range: new vscode.Range(
-      editor.visibleRanges[0].start.line + 1,
-      Number.MAX_SAFE_INTEGER,
-      0,
-      Number.MAX_SAFE_INTEGER
-    ),
+    range: decorationPosition,
     renderOptions: {
       after: {
         contentText: text,
         fontWeight: "normal",
-        fontStyle: "normal",
-        textDecoration: "none;position: absolute;right: 15px;"
+        fontStyle: "normal"
+        //textDecoration: "none;right: 15px;"
       }
     }
   };
@@ -174,5 +187,5 @@ function getDiscouragement() {
 function setHideTimeout() {
   setTimeout(() => {
     vscode.window.activeTextEditor!.setDecorations(decorationType, []);
-  }, 2100);
+  }, 3500);
 }

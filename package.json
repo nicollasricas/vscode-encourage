@@ -2,7 +2,7 @@
   "name": "vscode-encourage",
   "displayName": "Encourage",
   "description": "An extension that adds a little encouragement through your day or not, every time you save a document.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "images/icon.png",
   "preview": true,
   "publisher": "nicollasr",
