@@ -4,7 +4,8 @@ import { defaultEncouragements, defaultDiscouragements } from "./defaults";
 const decorationType = vscode.window.createTextEditorDecorationType({
   after: {
     margin: "0 0 0 3em",
-    textDecoration: "none;"
+    textDecoration: "none"
+    //border: "1px solid #75715E"
   },
   isWholeLine: true,
   rangeBehavior: vscode.DecorationRangeBehavior.ClosedOpen

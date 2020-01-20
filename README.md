@@ -2,6 +2,8 @@
 
 An extension that adds a little encouragement through your day or not, every time you save a document.
 
+![Preview](./images/preview.gif)
+
 This extension was inspired by the ["Encourage"](https://marketplace.visualstudio.com/items?itemName=Haacked.Encourage) which I've been using for years now.
 
 # Settings
