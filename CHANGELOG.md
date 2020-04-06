@@ -4,6 +4,13 @@ All notable changes to the "vscode-encourage" extension will be documented in th
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.1] - 2020-04-05
+
+### Changed
+
+- Update dependencies
+- Migrate from tslint to eslint
+
 ## [1.0.1] - 2020-01-18
 
 ### Changed
