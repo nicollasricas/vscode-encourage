@@ -2,7 +2,7 @@
   "name": "vscode-encourage",
   "displayName": "Encourage",
   "description": "An extension that adds a little encouragement through your day or not, every time you save a document.",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "icon": "images/icon.png",
   "preview": true,
   "publisher": "nicollasr",
@@ -66,19 +66,22 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
     "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile",
+    "pretest": "npm run compile && npm run lint",
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/glob": "^7.1.1",
-    "@types/mocha": "^5.2.6",
-    "@types/node": "^10.12.21",
     "@types/vscode": "^1.41.0",
-    "glob": "^7.1.4",
-    "mocha": "^6.1.4",
-    "typescript": "^3.3.1",
-    "tslint": "^5.12.1",
-    "vscode-test": "^1.2.0"
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.11.0",
+    "eslint": "^6.8.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "glob": "^7.1.6",
+    "mocha": "^7.1.1",
+    "typescript": "^3.8.3",
+    "vscode-test": "^1.3.0"
   }
 }
