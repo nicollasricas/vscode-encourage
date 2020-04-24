@@ -2,9 +2,8 @@
   "name": "vscode-encourage",
   "displayName": "Encourage",
   "description": "An extension that adds a little encouragement through your day or not, every time you save a document.",
-  "version": "1.1.1",
-  "icon": "images/icon.png",
-  "preview": true,
+  "version": "1.2.1",
+  "icon": "icon.png",
   "publisher": "nicollasr",
   "bugs": {
     "url": "https://github.com/nicollasricas/vscode-encourage/issues"
@@ -27,22 +26,46 @@
           "encourage.encouragements": {
             "type": "array",
             "description": "A list of encouragements that will replace the default.",
-            "default": []
+            "default": [],
+            "examples": [
+              [
+                "So good! 💖",
+                "Bravo! 👏"
+              ]
+            ]
           },
           "encourage.additionalEncouragements": {
             "type": "array",
             "description": "A list with additional encouragments.",
-            "default": []
+            "default": [],
+            "examples": [
+              [
+                "So good! 💖",
+                "Bravo! 👏"
+              ]
+            ]
           },
           "encourage.discouragements": {
             "type": "array",
             "description": "A list of discouragements that will replace the default.",
-            "default": []
+            "default": [],
+            "examples": [
+              [
+                "🎻 Today isn't your day, is it? 🐺⚔️",
+                "🚶 Have you considered another career?"
+              ]
+            ]
           },
           "encourage.additionalDiscouragements": {
             "type": "array",
             "description": "A list with additional discouragements.",
-            "default": []
+            "default": [],
+            "examples": [
+              [
+                "🎻 Today isn't your day, is it? 🐺⚔️",
+                "🚶 Have you considered another career?"
+              ]
+            ]
           },
           "encourage.random": {
             "type": "boolean",

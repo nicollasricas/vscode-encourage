@@ -2,7 +2,7 @@
 
 An extension that adds a little encouragement through your day or not, every time you save a document.
 
-![Preview](./images/preview.gif)
+![Preview](https://user-images.githubusercontent.com/7860985/79793932-66320380-831f-11ea-8188-fb4a627f670a.gif)
 
 This extension was inspired by the ["Encourage"](https://marketplace.visualstudio.com/items?itemName=Haacked.Encourage) which I've been using for years now.
 
@@ -62,5 +62,6 @@ This extension was inspired by the ["Encourage"](https://marketplace.visualstudi
 - Intelligence is a very valuable thing, innit, my friend.
 - I know what I know, you know. If you don't know, then you don't know, do you?
 - 🔫🔪 Si vis pacem, para bellum 🔫🔪
+- 🔫👼 Ça va sans dire
 
 Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com)

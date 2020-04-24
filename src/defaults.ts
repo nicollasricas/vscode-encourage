@@ -17,7 +17,7 @@ export const defaultEncouragements = [
   "Nnnnnnnailed it! ✌",
   "You're good enough! 😎",
   "You're smart enough! 💫",
-  "People like you! 💞"
+  "People like you! 💞",
 ];
 
 export const defaultDiscouragements = [
@@ -40,5 +40,6 @@ export const defaultDiscouragements = [
   "Being stupid is only painful for others.",
   "Intelligence is a very valuable thing, innit, my friend.",
   "I know what I know, you know. If you don't know, then you don't know, do you?",
-  "🔫🔪 Si vis pacem, para bellum 🔫🔪"
+  "🔫🔪 Si vis pacem, para bellum 🔫🔪",
+  "🔫👼 Ça va sans dire",
 ];
